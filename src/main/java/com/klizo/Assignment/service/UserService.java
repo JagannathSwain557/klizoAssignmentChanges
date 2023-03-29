@@ -27,6 +27,7 @@ public class UserService {
 		owners.forEach(b -> ownerList.add(b));
 		return ownerList;
 	}
+	
 	public UserEntity updateUser(UserDto userDetails, String fastName) {
 		UserEntity user = userRep.findById(fastName).get();
 		if (userDetails.getFastName() != null && !userDetails.getFastName().isEmpty()) {
