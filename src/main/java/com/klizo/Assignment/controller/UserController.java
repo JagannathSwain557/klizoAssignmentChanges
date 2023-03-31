@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.klizo.Assignment.dto.AuthenticationRequest;
@@ -120,5 +121,15 @@ token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY4MDA2OTAyNSwiaWF0IjoxN
     	UserEntity userEntity=userService.delete(fastName);
     	return new ResponseEntity<UserEntity>(userEntity,HttpStatus.OK);
     }
+	@PostMapping("/user/authentic")
+	public ResponseEntity<Object> authUserName(@RequestParam("username") String username) throws Exception{
+		
+		List<UserEntity> getdata = userService.authenticateUserName(username);
+		if(getdata!=null && getdata.size()>0){
+			return new ResponseEntity<Object>(getdata.get(0), HttpStatus.OK);
+		}else{
+			throw new Exception("Login Failed !!");
+		}
+	}
 	
 }

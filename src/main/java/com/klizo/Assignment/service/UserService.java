@@ -59,4 +59,10 @@ public class UserService {
 		userRep.delete(userEntity);
 		return userEntity;
 	}
+	public List<UserEntity> authenticateUserName(String username){
+		Iterable<UserEntity> users = userRep.authenticateUserName(username.trim().toUpperCase());
+		ArrayList userList = new ArrayList();
+		users.forEach(b -> userList.add(b));
+		return userList;
+	}
 }

@@ -79,6 +79,7 @@
 		"f6b221fd-7983-8e1f-7397-4182c0973392",
 		"c54598fc-b006-fe9f-c427-ad621a126a8a",
 		"dfc79aaa-3203-9ff3-ebfa-dbbc7dba3d47",
+		"7c4434c9-4a56-3c44-a5e7-0523fa8c860a",
 		"a5d7b459-069f-b15a-9983-644581a4b9f3"
 	],
 	"folders": [],
@@ -762,6 +763,44 @@
 			"collectionId": "6fcfa54e-a342-620b-c49d-0c6651734cb9",
 			"responses": [],
 			"rawModeData": "     {     \n       \n        \"n_id\": 5960152138121216,\n        \"from_id\": 1230,\n        \"sender_type\": \"fgh\",\n        \"to_id\": 150,\n        \"reciever_type\": \"fghj\",\n        \"isRead\": true,\n        \"message\": \"fghjk\",\n        \"createdAt\": \"2012-05-19T18:30:00.000+00:00\",\n        \"messageType\": \"fghj\",\n        \"isGrpMsg\": true\n    }"
+		},
+		{
+			"id": "7c4434c9-4a56-3c44-a5e7-0523fa8c860a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/klizo/assignment/user/authentic?username=D",
+			"queryParams": [
+				{
+					"key": "username",
+					"value": "D",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1680266049073,
+			"name": "AuthenticateUser copy",
+			"description": "",
+			"collectionId": "6fcfa54e-a342-620b-c49d-0c6651734cb9",
+			"responses": [],
+			"rawModeData": ""
 		},
 		{
 			"id": "7c99dbe0-5ff6-d6f6-1cad-ca56d2d0746e",
