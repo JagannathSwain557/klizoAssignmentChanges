@@ -121,7 +121,7 @@ token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY4MDA2OTAyNSwiaWF0IjoxN
     	UserEntity userEntity=userService.delete(fastName);
     	return new ResponseEntity<UserEntity>(userEntity,HttpStatus.OK);
     }
-	@PostMapping("/user/authentic")
+	@PostMapping("/user/authentication")
 	public ResponseEntity<Object> authUserName(@RequestParam("username") String username) throws Exception{
 		
 		List<UserEntity> getdata = userService.authenticateUserName(username);

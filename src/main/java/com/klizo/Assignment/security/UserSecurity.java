@@ -55,7 +55,7 @@ public class UserSecurity extends WebSecurityConfigurerAdapter {
 					.antMatchers("/klizo/assignment/user/delete/{fastName}").authenticated()
 					.antMatchers("/klizo/assignment/user/update/{fastName}").authenticated()
 					.antMatchers("/klizo/assignment/user/getall").authenticated()
-					.antMatchers("/klizo/assignment/user/authentic").permitAll()
+					.antMatchers("/klizo/assignment/user/authentication").permitAll()
 					
 					
 					.anyRequest()

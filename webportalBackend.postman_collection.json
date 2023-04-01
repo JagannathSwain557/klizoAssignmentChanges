@@ -775,7 +775,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:9090/klizo/assignment/user/authentic?username=D",
+			"url": "http://localhost:9090/klizo/assignment/user/authentication?username=D",
 			"queryParams": [
 				{
 					"key": "username",
@@ -795,7 +795,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1680266049073,
+			"time": 1680326892000,
 			"name": "AuthenticateUser copy",
 			"description": "",
 			"collectionId": "6fcfa54e-a342-620b-c49d-0c6651734cb9",
