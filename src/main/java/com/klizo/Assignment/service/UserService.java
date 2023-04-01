@@ -22,10 +22,10 @@ public class UserService {
 	}
 
 	public List<UserEntity> getAllUsers() {
-		Iterable<UserEntity> owners = userRep.findAll();
-		ArrayList ownerList = new ArrayList();
-		owners.forEach(b -> ownerList.add(b));
-		return ownerList;
+		Iterable<UserEntity> users = userRep.findAll();
+		ArrayList userList = new ArrayList();
+		users.forEach(b -> userList.add(b));
+		return userList;
 	}
 	
 	public UserEntity updateUser(UserDto userDetails, String fastName) {
