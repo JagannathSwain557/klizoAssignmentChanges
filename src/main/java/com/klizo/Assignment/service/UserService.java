@@ -64,5 +64,6 @@ public class UserService {
 		ArrayList userList = new ArrayList();
 		users.forEach(b -> userList.add(b));
 		return userList;
+
 	}
 }
